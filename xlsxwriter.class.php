@@ -208,7 +208,7 @@ class XLSXWriter
         return $column_types;
     }
 
-    public function writeSheetHeader($sheet_name, array $header_types, bool $reformatHeaders = false, $col_options = null)
+    public function writeSheetHeader($sheet_name, array $header_types, $reformatHeaders = false, $col_options = null)
     {
         if (empty($sheet_name) || empty($header_types) || !empty($this->sheets[$sheet_name]))
             return;
